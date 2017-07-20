@@ -1,0 +1,17 @@
+button {
+    background-image: linear-gradient(to left, rgba(255, 146, 202, 0.75) 0%, rgba(145, 149, 251, 0.86) 100%);
+    // box-shadow: 0 9px 25px -5px #df91fb;
+    padding: 0.5em 2.5em;
+    margin: 15px 0;
+    border-radius: 20px;
+    font-size: 1.4em;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 1em;
+    outline: none;
+    border: none;
+    // transition: 0.3s linear;
+    // &:hover{
+    //     transform: translatey(2px);
+    // }
+} 

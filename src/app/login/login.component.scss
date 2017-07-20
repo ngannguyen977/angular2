@@ -1,0 +1,62 @@
+/* fonts  */
+/* BASE - Base styles, variables, mixins, etc */
+
+@import '../../styles/main.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet');
+#login-form {
+    background: url(https://static.pexels.com/photos/5782/nature-flowers-vintage-plant.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    .container {
+        box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31);
+        text-align: center;
+        border-radius: 5px;
+        margin: 3em auto;
+        background: rgba(255, 255, 255, 0.95);
+        height: auto;
+        width: 530px;
+        max-width: 100%;
+        padding: 2.5em 0;
+        position: absolute;
+        top: 18%;
+        left: 0;
+        right: 0;
+        h2{
+            background: url(https://static.pexels.com/photos/5782/nature-flowers-vintage-plant.jpg);
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            letter-spacing: 2px;
+            font-size: 3.5em;
+            margin-top: 20px;
+        }
+        input {
+            width: 250px;
+            border: 1px solid $primary-border;
+            display: inline-block;
+            border-radius: 20px;
+            background: none;
+            padding: 0.8em 2em;
+            margin: 5px;
+            outline: none;
+            color:$base-font-color;
+
+            &:focus{
+                border:1px solid $status-border;
+;
+            }
+            &::placeholder {
+                color: #999;
+            }
+            &:-webkit-autofill {
+                -webkit-box-shadow: 0 0 0 1000px white inset !important;
+            }
+        }
+    }
+}
