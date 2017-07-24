@@ -21,12 +21,12 @@
       "styles": [
         "../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss",
         "../node_modules/alertifyjs/build/css/alertify.css",
-        "../node_modules/alertifyjs/build/css/themes/alertify.css",
         "styles/main.scss"
       ],
       "scripts": [
         "../node_modules/jquery/dist/jquery.min.js",
-        "../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"
+        "../node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js",
+        "../node_modules/alertifyjs/build/alertify.min.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

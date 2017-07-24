@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthenService } from '../core/services/authen.service';
+import { UrlConstants } from '../core/common/url.constants';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _authenService: AuthenService, private _router:Router) { }
 
   ngOnInit() {
+    let loggedIn = this._authenService.isUserAuthenticated();
+    if(loggedIn == false){
+      this._router.navigate([UrlConstants.LOGIN])
+    }
   }
 
 }
